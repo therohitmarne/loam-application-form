@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Assignment </title>
+</head>
+
+<body>
+    <section id="main">
+        <div class="container">
+            <div class="row clr m-auto rounded">
+                <div class="col-lg-6 set">
+                    <h2 class="text-center mb-3 text-uppercase font-weight-bold">Loan Application Form</h2>
+                    <p>Dear <span id="name"> </span>,<br />
+                        Thank you for your inquiry.<br />
+                        Verification number has been sent to your Email : <span id="email"></span><br /><br />
+
+                    <label class="font-weight-bold">Enter the OTP :</label>
+                    <input type="text" class="input" id="otp" placeholder="Enter the OTP" /><br /><br />
+                    <button class="btn-1" id="send" onclick="send()">Send</button>
+                    <button class="btn-1" id="back" onclick="history.back()">Back</button>
+
+                    <div id="warning"></div>
+
+                    <div id="success" class="d-flex align-items-center">
+                        <img src="./img/sucess.png" width="10%" class="m-3" />
+                        <h6>Validation Successful !</h6>
+                    </div>
+
+                    <div id="error" class="d-flex align-items-center">
+                        <img src="./img/error.png" width="10%" class="m-3" />
+                        <h6>Validation Failed !</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
